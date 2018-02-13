@@ -1,7 +1,8 @@
+
 import discord, asyncio, feedparser
 
 client = discord.Client()
-
+#rss_feed is set at line 22 
 async def rss_feed(channel_id, url):
 	await client.wait_until_ready()
 	channel = discord.Object(id=channel_id)
